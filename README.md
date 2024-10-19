@@ -24,3 +24,8 @@
 - **Source**: [cyberciti.biz](https://www.cyberciti.biz/)
 - **Date**: 2017
 - **Link**: [Linux / UNIX: Run Command a Number of Times In a Row](https://www.cyberciti.biz/faq/bsd-appleosx-linux-bash-shell-run-command-n-times/)
+
+**Description**: Date formattinf in Linux
+- **Source**: [phoenixnap.com](https://phoenixnap.com/kb)
+- **Date**: 2024
+- **Link**: [Linux date Command: How to Set, Change, Format Date in Linux](https://phoenixnap.com/kb/linux-date-command)
