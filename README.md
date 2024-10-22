@@ -25,7 +25,18 @@
 - **Date**: 2017
 - **Link**: [Linux / UNIX: Run Command a Number of Times In a Row](https://www.cyberciti.biz/faq/bsd-appleosx-linux-bash-shell-run-command-n-times/)
 
-**Description**: Date formattinf in Linux
+**Description**: Date formatting in Linux
 - **Source**: [phoenixnap.com](https://phoenixnap.com/kb)
 - **Date**: 2024
 - **Link**: [Linux date Command: How to Set, Change, Format Date in Linux](https://phoenixnap.com/kb/linux-date-command)
+
+**Description**:How to create a file with todays date in the filename
+- **Source**: [stackoverflow.com](https://stackoverflow.com)
+- **Date**: 2024
+- **Link**: [How to create a file with todays date in the filename](https://stackoverflow.com/questions/48270960/how-to-create-a-file-with-todays-date-in-the-filename)
+
+
+**Description**:Use wget to download and name file
+- **Source**: [stackoverflow.com](https://stackoverflow.com)
+- **Date**: 2023
+- **Link**: [How to change filename of a file downloaded with wget?](https://stackoverflow.com/questions/16678487/how-to-change-filename-of-a-file-downloaded-with-wget)
