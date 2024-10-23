@@ -35,6 +35,11 @@
 - **Date**: 2024
 - **Link**: [How to create a file with todays date in the filename](https://stackoverflow.com/questions/48270960/how-to-create-a-file-with-todays-date-in-the-filename)
 
+**Description**:How to create a file with todays date in the filename(2)
+- **Source**: [superuser.com/](https://superuser.com/)
+- **Date**: 2019
+- **Link**: [In Linux how to make a file with a name that is current date and time](https://superuser.com/questions/399475/in-linux-how-to-make-a-file-with-a-name-that-is-current-date-and-time)
+
 
 **Description**:Use wget to download and name file
 - **Source**: [stackoverflow.com](https://stackoverflow.com)
