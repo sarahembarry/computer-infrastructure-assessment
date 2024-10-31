@@ -45,3 +45,22 @@
 - **Source**: [stackoverflow.com](https://stackoverflow.com)
 - **Date**: 2023
 - **Link**: [How to change filename of a file downloaded with wget?](https://stackoverflow.com/questions/16678487/how-to-change-filename-of-a-file-downloaded-with-wget)
+
+**Description**: Create shell script in nano
+- **Source**: [linuxandubuntu.com](www.linuxandubuntu.com)
+- **Date**: 2017
+- **Link**: [How To Create Shell Scripts](https://www.linuxandubuntu.com/home/how-to-create-shell-scripts/)
+
+**Description**: 
+
+
+
+**Description**: How to Make Script Executable in Linux | chmod Command
+- **Source**: [geeksforgeeks.org](https://www.geeksforgeeks.org/)
+- **Date**: 2024
+- **Link**: [How to Make Script Executable in Linux | chmod Command](https://www.geeksforgeeks.org/chmod-command-linux/)
+
+**Description**: How to execute a shell script in Linux
+- **Source**: [cyberciti.biz/](www.cyberciti.biz/)
+- **Date**: 2024
+- **Link**: [How to execute a shell script in Linux](https://www.cyberciti.biz/faq/how-to-execute-a-shell-script-in-linux/)
