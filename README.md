@@ -64,3 +64,23 @@
 - **Source**: [cyberciti.biz/](www.cyberciti.biz/)
 - **Date**: 2024
 - **Link**: [How to execute a shell script in Linux](https://www.cyberciti.biz/faq/how-to-execute-a-shell-script-in-linux/)
+
+**Description**: How to Read JSON Files with Pandas?
+- **Source**: [geeksforgeeks.org](https://www.geeksforgeeks.org/)
+- **Date**: 2023
+- **Link**: [How to Read JSON Files with Pandas?](https://www.geeksforgeeks.org/how-to-read-json-files-with-pandas/)
+
+**Description**: Pandas Index.value_counts()
+- **Source**: [geeksforgeeks.org](https://www.geeksforgeeks.org/)
+- **Date**: 2023
+- **Link**: [Pandas Index.value_counts()](https://www.geeksforgeeks.org/python-pandas-index-value_counts/)
+
+**Description**: Pandas DataFrame set_index() Method
+- **Source**: [www.w3schools.com](https://www.w3schools.com/)
+- **Date**: 2024
+- **Link**: [Pandas DataFrame set_index() Method](https://www.w3schools.com/python/pandas/ref_df_set_index.asp)
+
+**Description**: Today's weather Athenry
+- **Source**: [data.gov.ie](https://data.gov.ie/)
+- **Date**: 2024
+- **Link**: [Today's weather Athenry](https://data.gov.ie/dataset/todays-weather-athenry/resource/fffca98d-f3b6-47de-a834-837f0633e14b)
