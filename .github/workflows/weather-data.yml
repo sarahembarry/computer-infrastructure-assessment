@@ -20,14 +20,14 @@ jobs:
           chmod +x weather.sh
           ./weather.sh
 
-      # Step 3: Commit and Push Changes
+      #  # Step 3: Commit and Push Changes
       - name: Commit and Push Changes
-        env:
-          PAT: ${{ secrets.PAT }}
-        run: |
-          git config --global user.name "sarahembarry"
-          git config --global user.email "sarahembarry@gmail.com"
-          git remote set-url origin https://${{ secrets.PAT }}@github.com/sarahembarry/computer-infrastructure-assesment.git
-          git add data/weather/
-          git commit -m "Automated weather data update - $(date)"
-          git push
+      env:
+        PAT: ${{ secrets.PAT }}
+      run: |
+        git config --global user.name "sarahembarry"
+        git config --global user.email "sarahembarry@gmail.com"
+        git remote set-url origin https://${{ secrets.PAT }}@github.com/sarahembarry/computer-infrastructure-assesment.git
+        git add data/weather/
+        git commit -m "Automated weather data update - $(date)"
+        git push
