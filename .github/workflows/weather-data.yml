@@ -27,7 +27,7 @@ jobs:
         run: |
           git config --global user.name "sarahembarry"
           git config --global user.email "sarahembarry@gmail.com"
-          git remote set-url origin https://sarahembarry:${{ secrets.PAT }}@github.com/sarahembarry/computer-infrastructure-assessment.git
+          git remote set-url origin https://${{ secrets.PAT }}@github.com/sarahembarry/computer-infrastructure-assessment.git
           git add data/weather/
           git commit -m "Automated weather data update - $(date)"
           git push
