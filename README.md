@@ -84,3 +84,40 @@
 - **Source**: [data.gov.ie](https://data.gov.ie/)
 - **Date**: 2024
 - **Link**: [Today's weather Athenry](https://data.gov.ie/dataset/todays-weather-athenry/resource/fffca98d-f3b6-47de-a834-837f0633e14b)
+
+**Description**: Pandas: How to replace zero with 'NaN'
+- **Source**: [statology.org](https://www.statology.org/)
+- **Date**: 2022
+- **Link**: [Pandas: How to Replace Zero with NaN](https://www.statology.org/pandas-replace-0-with-nan/)
+
+**Description**: Replace values in Pandas dataframe using regex
+- **Source**: [geeksforgeeks.org](https://www.geeksforgeeks.org/)
+- **Date**: 2023
+- **Link**: [Replace values in Pandas dataframe using regex](https://www.geeksforgeeks.org/replace-values-in-pandas-dataframe-using-regex/)
+
+**Description**: A Guide to R Regular Expressions
+- **Source**: [datacamp.com](www.datacamp.com)
+- **Date**: 2022
+- **Link**: [A Guide to R Regular Expressions](https://www.datacamp.com/tutorial/regex-r-regular-expressions-guide)
+
+**Description**: Using isnull() and groupby() on a pandas dataframe
+- **Source**: [stackoverflow.com](https://stackoverflow.com/)
+- **Date**: 2018
+- **Link**: [Using isnull() and groupby() on a pandas dataframe](https://stackoverflow.com/questions/46106954/using-isnull-and-groupby-on-a-pandas-dataframe)
+
+**Description**: Display rows with one or more NaN values in pandas dataframe
+- **Source**: [stackoverflow.com](https://stackoverflow.com/)
+- **Date**: 2017
+- **Link**: [Display rows with one or more NaN values in pandas dataframe](https://stackoverflow.com/questions/43424199/display-rows-with-one-or-more-nan-values-in-pandas-dataframe)
+
+
+**Description**: pd.NA vs np.nan for pandas
+- **Source**: [stackoverflow.com](https://stackoverflow.com/)
+- **Date**: 2017
+- **Link**: [pd.NA vs np.nan for pandas](https://stackoverflow.com/questions/60115806/pd-na-vs-np-nan-for-pandas)
+
+
+**Description**: How to solve pandas (2.2.0) "FutureWarning: Downcasting behavior in replace is deprecated"
+- **Source**: [https://github.com/pandas-dev](https://github.com/pandas-dev)
+- **Date**: 2024
+- **Link**: [QST: How to solve pandas (2.2.0) "FutureWarning: Downcasting behavior in replace is deprecated" on a Series? ](https://github.com/pandas-dev/pandas/issues/57734)
