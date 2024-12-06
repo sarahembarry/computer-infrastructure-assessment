@@ -121,3 +121,34 @@
 - **Source**: [https://github.com/pandas-dev](https://github.com/pandas-dev)
 - **Date**: 2024
 - **Link**: [QST: How to solve pandas (2.2.0) "FutureWarning: Downcasting behavior in replace is deprecated" on a Series? ](https://github.com/pandas-dev/pandas/issues/57734)
+
+**Description**: How to solve pandas (2.2.0) "FutureWarning: Downcasting behavior in replace is deprecated"
+- **Source**: [https://github.com/pandas-dev](https://github.com/pandas-dev)
+- **Date**: 2024
+- **Link**: [QST: How to solve pandas (2.2.0) "FutureWarning: Downcasting behavior in replace is deprecated" on a Series? ](https://github.com/pandas-dev/pandas/issues/57734)
+
+**Description**: Pandas – Groupby value counts on the DataFrame
+- **Source**: [geeksforgeeks.org](https://www.geeksforgeeks.org/)
+- **Date**: 2022
+- **Link**: [Pandas – Groupby value counts on the DataFrame](https://www.geeksforgeeks.org/pandas-groupby-value-counts-on-the-dataframe/)
+
+**Description**: How to Plot a Pandas DataFrame with Matplotlib [Area Plot]
+- **Source**: [how2matplotlib.com/](https://how2matplotlib.com/)
+- **Date**: 2024
+- **Link**: [How to Plot a Pandas DataFrame with Matplotlib](https://how2matplotlib.com/how-to-plot-a-pandas-dataframe-with-matplotlib.html)
+
+
+**Description**: How to Customize Matplotlib Xticks Frequency: A Comprehensive Guide
+- **Source**: [how2matplotlib.com/](https://how2matplotlib.com/)
+- **Date**: 2024
+- **Link**: [How to Customize Matplotlib Xticks Frequency: A Comprehensive Guide](https://how2matplotlib.com/matplotlib-xticks-frequency.html)
+
+**Description**: Pandas DataFrame index Property
+- **Source**: [www.w3schools.com/](https://www.w3schools.com)
+- **Date**: 2024
+- **Link**: [Pandas DataFrame index Property](https://www.w3schools.com/python/pandas/ref_df_index.asp#:~:text=The%20index%20property%20returns%20the,%2C%20stop%2C%20and%20step%20values.)
+
+**Description**: How to use range(len()) in Python?
+- **Source**: [blog.finxter.com](https://blog.finxter.com/)
+- **Date**: 2022
+- **Link**: [How to use range(len()) in Python?](https://blog.finxter.com/how-to-use-rangelen-in-python/)
