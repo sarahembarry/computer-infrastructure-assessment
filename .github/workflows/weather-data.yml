@@ -1,33 +1,49 @@
+# Name of the GitHub Actions workflow
 name: Daily Weather Data Automation
 
+# Define when the workflow should run
 on:
+  # Schedule to run daily at 10:00 AM UTC
   schedule:
-    - cron: '0 10 * * *'  # Run daily at 10:00 AM UTC
-  workflow_dispatch:  # Allow manual trigger
+    - cron: '0 10 * * *'
+  # Allow manual trigger of the workflow
+  workflow_dispatch:
 
+# Define the job to be executed
 jobs:
   run-weather-script:
+    # Specify the environment to run the job
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Check out the repository
+      # Step 1: Check out the repository to the runner
       - name: Check out Repository
         uses: actions/checkout@v3
 
-      # Step 2: Run the weather.sh script
+      # Step 2: Make the script executable and run it
       - name: Run Weather Script
         run: |
-          chmod +x weather.sh
-          ./weather.sh
+          chmod +x weather.sh  # Ensure the script is executable
+          ./weather.sh         # Execute the script
 
-      # Step 3: Commit and Push Changes
+      # Step 3: Commit and push changes to the repository
       - name: Commit and Push Changes
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Use the GitHub token for authentication
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/sarahembarry/computer-infrastructure-assesment.git
-          git add data/weather/
-          git commit -m "Automated weather data update - $(date)"
-          git push
+          git config --global user.name "github-actions[bot]"  # Set Git username
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"  # Set Git email
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/sarahembarry/computer-infrastructure-assesment.git  # Update remote URL for authentication
+          git add data/weather/  # Stage changes in the weather data directory
+          git commit -m "Automated weather data update - $(date)"  # Commit with a timestamped message
+          git push  # Push the changes to the repository
+
+
+# References:
+# - Workflows: [GitHub Actions Workflow Syntax](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions)
+# - Scheduled Runs: [Events that Trigger Workflows](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule)
+# - Commit and Push: [Authenticating with the GITHUB_TOKEN](https://docs.github.com/en/actions/security-guides/automatic-token-authentication)
+# - Recurring Workflows with Cron Jobs: [Creating a Recurring GitHub Actions Workflow with Cron Jobs](https://medium.com/@burakkara010/creating-a-recurring-github-actions-workflow-with-cron-jobs-15ce9
+# - Example Workflow: [Creating an Example Workflow](https://docs.github.com/en/actions/use-cases-and-examples/creating-an-example-workflow)
+
+
