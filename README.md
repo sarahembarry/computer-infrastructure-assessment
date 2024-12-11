@@ -16,33 +16,28 @@ My name is Sarah Barry, and I am currently pursuing a Higher Diploma in Science 
 
 ### **About This Project**
 
-This repository contains the tasks and scripts I developed for the **Computer Infrastructure** module. It focuses on practical skills in command-line operations, scripting, and data management. The key elements of this project include:
+This repository contains tasks and scripts from the **Computer Infrastructure** module, focusing on command-line operations, scripting, and data management, including:
 
-- **Directory Management:** 
-  - Created and managed directories and subdirectories using Linux commands.
-- **Timestamping:**
-  - Automated appending timestamps to a file using the `date` command.
-  - Generated formatted timestamps for file naming.
-- **Weather Data Automation:**
-  - Wrote a Bash script (`weather.sh`) to download weather data from Met Éireann with timestamped filenames.
-  - Integrated the script into a GitHub Actions workflow for daily automation.
-- **Data Analysis:**
-  - Used Python libraries (`pandas`, `numpy`, `matplotlib`) to analyze and visualize downloaded weather data.
+- **Directory Management:** Managed directories with Linux commands.  
+- **Timestamping:** Automated file timestamps and formatted names using `date`.  
+- **Weather Data Automation:** Created a Bash script (`weather.sh`) to retrieve daily weather data from the Athenry weather station, saving it with timestamped filenames. This process is automated with GitHub Actions.  
+- **Data Analysis:** Analyzed and visualized weather data using Python (`pandas`, `numpy`, `matplotlib`).  
 
 ---
 
 ### **How to Get Started**
 
-To begin with this repository, follow these steps:
+Follow these steps to set up and use this repository:
 
-1. **Install the Required Tools:**
-   - Install a Linux terminal or Git Bash (if on Windows).
+1. **Install Tools:**
+   - If on Windows, install a Linux terminal or Git Bash.
    - Install Python 3.x and Jupyter Notebook.
 
-2. **Clone This Repository:**
+2. **Clone the Repository:**
    ```bash
    git clone https://github.com/sarahembarry/computer-infrastructure-assessment.git
    cd computer-infrastructure-assessment
+
 
 3. **Set Up Dependencies:**
    - Install the Python libraries using the `requirements.txt` file:
@@ -57,14 +52,15 @@ To begin with this repository, follow these steps:
      ```
    - Open and run the Jupyter Notebook for data analysis.
 
-5. **Automate Using GitHub Actions:**
-   - A pre-configured GitHub Actions workflow (`.github/workflows/weather-script.yml`) is included to automate weather data collection daily.
+5. **Automate Tasks:**
+   - Use the pre-configured GitHub Actions workflow (`.github/workflows/weather-script.yml`) to automate daily weather data collection.
 
 6. **Optional: Use Google Colab**
-   - Upload the notebook to Google Colab to execute the data analysis tasks without local setup.
-<a target="_blank" href="https://colab.research.google.com/github/sarahembarry/computer-infrastructure-assesment">
-  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
-</a>
+   - Upload the notebook to Google Colab to execute the data analysis tasks without local setup.  
+     <a target="_blank" href="https://colab.research.google.com/github/sarahembarry/computer-infrastructure-assessment">
+       <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+     </a>
+
 
 
 ### References
@@ -72,8 +68,8 @@ To begin with this repository, follow these steps:
 #### **General Linux Commands**
 - [Tree Command in Linux with Examples](https://www.geeksforgeeks.org/tree-command-unixlinux/)
 - [Date Command in Linux](https://www.geeksforgeeks.org/date-command-linux-examples/)
-- [Writing Current Date/Time to a File](https://stackoverflow.com/questions/43221469/write-current-date-time-to-a-file-using-shell-script)
-- [Date Formatting in Linux](https://phoenixnap.com/kb/linux-date-command)
+- [Writing Current Date/Time to a File](https://stackoverflow.com/questions/43221469/write-current-date-time-to-a-file-using-shell-script)  
+- [Date Formatting in Linux](https://phoenixnap.com/kb/linux-date-command)  
 
 #### **File and Data Automation**
 - [How to Create a File with Today's Date in the Filename](https://stackoverflow.com/questions/48270960/how-to-create-a-file-with-todays-date-in-the-filename)
@@ -110,8 +106,13 @@ To begin with this repository, follow these steps:
 - [Description of Metrics from Met Éireann](https://data.gov.ie/dataset/todays-weather-athenry/resource/fffca98d-f3b6-47de-a834-837f0633e14b)
 
 #### **GitHub Actions and Automation**
-- [GitHub Actions Workflow Syntax](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions) - Learn the syntax for creating workflows in GitHub Actions.
-- [Events that Trigger Workflows](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule) - Detailed documentation on events, including scheduled runs.
-- [Authenticating with the GITHUB_TOKEN](https://docs.github.com/en/actions/security-guides/automatic-token-authentication) - Guide to securely authenticate workflows using the GITHUB_TOKEN.
-- [Creating a Recurring GitHub Actions Workflow with Cron Jobs](https://medium.com/@burakkara010/creating-a-recurring-github-actions-workflow-with-cron-jobs-15ce9) - Tutorial on setting up recurring workflows using cron jobs in GitHub Actions.
-- [Creating an Example Workflow](https://docs.github.com/en/actions/use-cases-and-examples/creating-an-example-workflow) - A step-by-step example of building a GitHub Actions workflow.
+- [GitHub Actions Workflow Syntax](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions) 
+- [Events that Trigger Workflows](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule) 
+- [Authenticating with the GITHUB_TOKEN](https://docs.github.com/en/actions/security-guides/automatic-token-authentication) 
+- [Creating a Recurring GitHub Actions Workflow with Cron Jobs](https://medium.com/@burakkara010/creating-a-recurring-github-actions-workflow-with-cron-jobs-15ce9)  
+- [Creating an Example Workflow](https://docs.github.com/en/actions/use-cases-and-examples/creating-an-example-workflow) 
+- [Creating an Example Workflow](https://docs.github.com/en/actions/use-cases-and-examples/creating-an-example-workflow) 
+- [Retry Step GitHub Action](https://github.com/marketplace/actions/retry-step)
+
+- **Understanding Exit Codes in Bash**  
+- [Understanding Exit Codes in Bash](https://bencane.com/understanding-exit-codes-in-bash-6942a8b96ce5#:~:text=To%20check%20the%20exit%20code,of%20the%20last%20run%20command.&text=%24%20echo%20%24%3F): 

@@ -3,40 +3,57 @@ name: Daily Weather Data Automation
 
 # Define when the workflow should run
 on:
-  # Schedule to run daily at 10:00 AM UTC
+  # Schedule to run daily at 10:00 AM UTC using a cron expression
   schedule:
     - cron: '0 10 * * *'
-  # Allow manual trigger of the workflow
+  # Allow manual trigger of the workflow for testing or debugging
   workflow_dispatch:
 
 # Define the job to be executed
 jobs:
   run-weather-script:
-    # Specify the environment to run the job
+    # Use the latest Ubuntu virtual machine as the environment
     runs-on: ubuntu-latest
 
     steps:
       # Step 1: Check out the repository to the runner
       - name: Check out Repository
         uses: actions/checkout@v3
+        # This action retrieves the repository's code so it can be accessed in subsequent steps
 
-      # Step 2: Make the script executable and run it
-      - name: Run Weather Script
-        run: |
-          chmod +x weather.sh  # Ensure the script is executable
-          ./weather.sh         # Execute the script
+      # Step 2: Run Weather Script with Retry Logic
+      - name: Run Weather Script with Retry
+        uses: nick-fields/retry@v2
+        with:
+          timeout_minutes: 15  # Total time allowed for all retry attempts
+          max_attempts: 3      # Number of retry attempts if the script fails
+          command: |
+            chmod +x weather.sh  # Ensure the weather.sh script is executable
+            ./weather.sh         # Execute the weather.sh script to fetch weather data
 
       # Step 3: Commit and push changes to the repository
       - name: Commit and Push Changes
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Use the GitHub token for authentication
         run: |
-          git config --global user.name "github-actions[bot]"  # Set Git username
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"  # Set Git email
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/sarahembarry/computer-infrastructure-assesment.git  # Update remote URL for authentication
-          git add data/weather/  # Stage changes in the weather data directory
-          git commit -m "Automated weather data update - $(date)"  # Commit with a timestamped message
-          git push  # Push the changes to the repository
+          # Configure Git user details for the commit
+          git config --global user.name "github-actions[bot]"  # Git username for automated commits
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"  # Git email for automated commits
+
+          # Update remote repository URL with token-based authentication
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/sarahembarry/computer-infrastructure-assesment.git
+
+          # Add all changes in the weather data directory
+          git add data/weather/
+
+          # Commit the changes with a timestamped message
+          # If there are no changes to commit, echo "No changes to commit" to avoid workflow failure
+          git commit -m "Automated weather data update - $(date)" || echo "No changes to commit"
+
+          # Push the changes back to the repository
+          # If there are no new commits to push, echo "No changes to push" to avoid workflow failure
+          git push || echo "No changes to push"
+
 
 
 # References:
@@ -45,5 +62,6 @@ jobs:
 # - Commit and Push: [Authenticating with the GITHUB_TOKEN](https://docs.github.com/en/actions/security-guides/automatic-token-authentication)
 # - Recurring Workflows with Cron Jobs: [Creating a Recurring GitHub Actions Workflow with Cron Jobs](https://medium.com/@burakkara010/creating-a-recurring-github-actions-workflow-with-cron-jobs-15ce9
 # - Example Workflow: [Creating an Example Workflow](https://docs.github.com/en/actions/use-cases-and-examples/creating-an-example-workflow)
+# - Job Retry Step: [Github Action Retry Step](https://github.com/marketplace/actions/retry-step)
 
 
