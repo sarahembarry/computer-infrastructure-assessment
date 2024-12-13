@@ -3,10 +3,12 @@
 # Download the weather data
 wget -O data/weather/$(date +%Y%m%d_%H%M%S).json https://prodapi.metweb.ie/observations/athenry/today
 
-# Check if the download was successful
+# Check the exit status of the 'wget' command to ensure the download was successful
 if [ $? -eq 0 ]; then
+    # If the command succeeded (exit code 0), print a success message
     echo "Weather data downloaded successfully."
 else
+    # If the command failed (non-0 exit code), print an error message and exit the script
     echo "Failed to download weather data. Exiting."
     exit 1
 fi

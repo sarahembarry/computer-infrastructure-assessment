@@ -10,7 +10,7 @@
 
 ### **About Me**
 
-My name is Sarah Barry, and I am currently pursuing a Higher Diploma in Science in Computing with a focus on Data Analytics at Atlantic Technological University (ATU) in Galway. This repository is part of my coursework for the module: **Computer Infrastructure**.
+My name is Sarah Barry, and I am currently pursuing a Higher Diploma in Computing in Data Analytics at Atlantic Technological University (ATU). This repository is part of my coursework for the module: **Computer Infrastructure**.
 
 ---
 
@@ -37,6 +37,7 @@ Follow these steps to set up and use this repository:
    ```bash
    git clone https://github.com/sarahembarry/computer-infrastructure-assessment.git
    cd computer-infrastructure-assessment
+   ```
 
 
 3. **Set Up Dependencies:**
@@ -111,8 +112,7 @@ Follow these steps to set up and use this repository:
 - [Authenticating with the GITHUB_TOKEN](https://docs.github.com/en/actions/security-guides/automatic-token-authentication) 
 - [Creating a Recurring GitHub Actions Workflow with Cron Jobs](https://medium.com/@burakkara010/creating-a-recurring-github-actions-workflow-with-cron-jobs-15ce9)  
 - [Creating an Example Workflow](https://docs.github.com/en/actions/use-cases-and-examples/creating-an-example-workflow) 
-- [Creating an Example Workflow](https://docs.github.com/en/actions/use-cases-and-examples/creating-an-example-workflow) 
 - [Retry Step GitHub Action](https://github.com/marketplace/actions/retry-step)
 
-- **Understanding Exit Codes in Bash**  
+- ### **Exit Codes in Bash**  
 - [Understanding Exit Codes in Bash](https://bencane.com/understanding-exit-codes-in-bash-6942a8b96ce5#:~:text=To%20check%20the%20exit%20code,of%20the%20last%20run%20command.&text=%24%20echo%20%24%3F): 
